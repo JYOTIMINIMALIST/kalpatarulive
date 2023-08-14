@@ -1,0 +1,437 @@
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php/$1 [L]
+
+RewriteCond %{THE_REQUEST} ^.*/index\.php
+RewriteRule ^(.*)index.php$ /$1 [R=301,L]
+
+Options -Indexes
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule (.*) https://www.%{SERVER_NAME}%{REQUEST_URI} [R=301]
+
+</IfModule>
+
+
+
+
+AddType application/vnd.ms-fontobject .eot
+AddType application/x-font-ttf .ttf
+AddType application/x-font-opentype .otf
+AddType application/x-font-woff .woff
+AddType image/svg+xml .svg
+
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/php
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE text/javascript
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
+AddOutputFilterByType DEFLATE application/ttf
+AddOutputFilterByType DEFLATE application/otf
+AddOutputFilterByType DEFLATE application/woff
+AddOutputFilterByType DEFLATE application/json
+AddOutputFilterByType DEFLATE image/svg+xml
+AddOutputFilterByType DEFLATE video/mp4
+AddOutputFilterByType DEFLATE video/ogg
+AddOutputFilterByType DEFLATE video/webm
+AddOutputFilterByType DEFLATE video/x-flv
+
+<IfModule mod_expires.c>
+# Turn on the module.
+ExpiresActive on
+# Set the default expiry times.
+ExpiresDefault "access plus 2 days"
+ExpiresByType image/jpg "access plus 1 month"
+ExpiresByType image/gif "access plus 1 month"
+ExpiresByType image/jpeg "access plus 1 month"
+ExpiresByType image/png "access plus 1 month"
+AddType image/svg+xml svg svgz
+AddEncoding gzip svgz
+ExpiresByType image/svg+xml "access 1 month"
+ExpiresByType text/css "access plus 1 month"
+ExpiresByType text/javascript "access plus 1 month"
+ExpiresByType application/javascript "access plus 1 month"
+ExpiresByType application/x-shockwave-flash "access plus 1 month"
+ExpiresByType text/css "now plus 1 month"
+ExpiresByType image/ico "access plus 1 month"
+ExpiresByType image/x-icon "access plus 1 month"
+ExpiresByType text/html "access plus 600 seconds"
+</IfModule>
+
+Redirect 301 /lonavala/kalpataru-amoda /lonavala/amoda-reserve-south-park
+Redirect 301 /projects/residential/launch-code-starlight-kalpataru-parkcity/25 /thane/launch-code-starlight-kalpataru-parkcity
+Redirect 301 /projects/kalpataru-vienta-kandivali-east/overview /mumbai/kalpataru-vienta
+Redirect 301 /projects/kalpataru-one-crest/overview /chennai/kalpataru-one-crest
+Redirect 301 /projects/residential/kalpataru-radiance/11 /mumbai/kalpataru-radiance
+Redirect 301 /Campaigns/pune/exquisite-wakad/thankyou.php /pune/kalpataru-exquisite
+Redirect 301 /projects/residential/kalpataru-yashodhan/17 /mumbai/kalpataru-yashodhan
+Redirect 301 /projects/kalpataru-woodsville-chandivali-mumbai/overview /mumbai/kalpataru-woodsville
+Redirect 301 /projects/residential/primus-residences-by-kalpataru/24 /mumbai/primus-residences-by-kalpataru
+Redirect 301 /projects/residential/live-a-cut-above-soon/34 /projects
+Redirect 301 /projects/kalpataru-imperia/amenities /mumbai/kalpataru-imperia
+Redirect 301 /view360/Magnus/index.html /mumbai/kalpataru-magnus
+Redirect 301 /projects/kalpataru-crest-bhandup-west-mumbai/plans /mumbai/kalpataru-crest
+Redirect 301 /projects/kalpataru-exquisite-wakad-pune/view360 /pune/kalpataru-exquisite
+#Redirect 301 /website/salesforce /contact-us
+#Redirect 301 "/sitemap?lightbox" /
+
+Redirect 301 /default.html /
+Redirect 301 /kalpataru-project-location-map /projects
+Redirect 301 /assurance/our-green-journey /50-plus-years-of-our-legacy
+Redirect 301 /kalpataru-nri-residency/ /hyderabad/kalpataru-residency
+Redirect 301 /index_a.html /
+Redirect 301 /about-us/kalpataru-awards /awards
+Redirect 301 /residential/kalpataru-plaza-pid1707-completed-projects /projects
+Redirect 301 /careers/careers.aspx https://careers.kalpataru.com/
+Redirect 301 /CSR /csr
+Redirect 301 /project/contact-us.aspx /contact-us
+Redirect 301 /projectdetail?title=kalpataru-vista  /projects
+Redirect 301 /residential/siddhachal-VI-pid1689-completed-projects /projects
+Redirect 301 /knowledge-hub/nri-real-estate-buyers /company-profile
+Redirect 301 /about-us/kalpataru-group-companies /company-profile
+Redirect 301 /sitemap /
+Redirect 301 /assurance/approach /company-profile
+Redirect 301 /knowledge-hub/kalpataru-buyers-guide/property-tax-benefit /projects
+Redirect 301 /knowledge-hub/kalpataru-buyers-guide/home-loan-for-kalpataru /projects
+Redirect 301 /horizon/horizon-ariel-view.html /
+Redirect 301 /contactus/careers /contact-us
+Redirect 301 /residential/kalpataru-habitat-pid1660-completed-projects /projects/residential
+Redirect 301 /kalpataru-woodsville/amenities.php /mumbai/kalpataru-woodsville
+Redirect 301 /residential/kamdhenu-pid1652-completed-projects /projects/residential
+Redirect 301 /residential/kalpataru-encalve-pid1694-completed-projects /projects
+Redirect 301 /customers-guide/documentation.aspx /
+Redirect 301 /view360/KalpataruNoida.html /noida/kalpataru-vista
+Redirect 301 /Locator.aspx/GetAllStoreAddress /contact-us
+Redirect 301 /knowledge-hub/buyer's-guide/documentation /
+Redirect 301 /residential/kalpatar /projects/residential
+Redirect 301 /about-us/kalpataru-chairman-message /leadership-team
+Redirect 301 /knowledge-hub/buyer's-guide/tax-benefit /
+Redirect 301 /knowledge-hub/kalpataru-buyers-guide/documentation /
+Redirect 301 /knowledge-hub/buyer's-guide/home-loan /
+Redirect 301 /Locator.aspx/b /contact-us
+Redirect 301 /Locator.aspx/a /contact-us
+
+Redirect 301 "/projects/residential/launch-code-starlight - kalpataru parkcity/25" /thane/launch-code-starlight-kalpataru-parkcity
+
+#projectdetail?title=kalpataru-vista
+#RewriteCond %{QUERY_STRING} title=kalpataru-vista
+#RewriteRule ^projectdetail?$ /path-to-new-location/? [L,R=301]
+#RewriteRule ^projectdetail_?title=kalpataru-vista$ registration.html$ [R=301,L]
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{QUERY_STRING} title=
+RewriteRule ^(.*)$ https://www.kalpataru.com/projects? [R=301,L]
+</IfModule>
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{QUERY_STRING} lightbox
+RewriteRule ^(.*)$ https://www.kalpataru.com/? [R=301,L]
+</IfModule>
+
+Redirect 301 /projects/Immensa-at-Kalpataru-Parkcity /projects/residential/immensa-kalpataru-parkcity/26
+Redirect 301 "/projects/kalpataru grandeur indore" /projects/residential/kalpataru-grandeur/6
+Redirect 301 /projects/kalpataru-immensa-thane-west /projects/residential/immensa-kalpataru-parkcity/26
+Redirect 301 /projects/kalpataru-jade-baner-pune /projects/residential/kalpataru-jade-residences/31
+Redirect 301 /projects/kalpataru-jade-residences-baner-pune /projects/residential/kalpataru-jade-residences/31
+Redirect 301 /projects/Kalpataru-Magnus /projects/residential/kalpataru-magnus/13
+Redirect 301 /projects/kalpataru-magnus-bandra /projects/residential/kalpataru-magnus/13
+Redirect 301 /projects/kalpataru-radiance /projects/residential/kalpataru-radiance/7
+Redirect 301 /projects/kalpataru-residency-sanat /projects/residential/kalpataru-residency/27
+Redirect 301 /projects/kalpataru-serenity /projects/residential/kalpataru-serenity/16
+Redirect 301 /projects/kalpataru-solitaire /projects/residential/kalpataru-solitaire/8
+Redirect 301 /projects/kalpataru-vienta-kandivali-east /projects/residential/kalpataru-vienta/12
+Redirect 301 /projects/kalpataru-woodsville /projects/residential/kalpataru-woodsville/22
+Redirect 301 /projects/kalpataru-woodsville-chandivali /projects/residential/kalpataru-woodsville/22
+Redirect 301 /projects/kalpataru-woodsville-chandivali-mumbai /projects/residential/kalpataru-woodsville/22
+Redirect 301 /projects/launch-code-starlight /projects/residential/launch-code-starlight--kalpataru-parkcity/25
+Redirect 301 /projects/Launch-Code-Starlight-at-Kalpataru-Parkcity /projects/residential/launch-code-starlight--kalpataru-parkcity/25
+Redirect 301 /projects/project-immensa /projects/residential/immensa-kalpataru-parkcity/26
+Redirect 301 /projects/kalpataru-crest /projects/residential/kalpataru-crest/21
+Redirect 301 /projects/Elitus /projects/residential/kalpataru-elitus/23
+Redirect 301 /projects/kalpataru-serenity-manjri-pune /projects/residential/kalpataru-serenity/16
+Redirect 301 /projects/parkcity-thane /projects/residential/kalpataru-parkcity/33
+Redirect 301 /projects/kalpataru-solitaire-juhu-mumbai /projects/residential/kalpataru-solitaire/8
+Redirect 301 /projects/kalpataru-exquisite-wakad-pune /projects/residential/kalpataru-exquisite/18
+Redirect 301 /projects/kalpataru-imperia /projects/residential/kalpataru-imperia/20
+Redirect 301 /projects/kalpataru-crest-bhandup-west-mumbai /projects/residential/kalpataru-crest/21
+Redirect 301 "/projects/Immensa at Kalpataru Parkcity" /projects/residential/immensa-kalpataru-parkcity/26
+Redirect 301 /projects/kalpataru-residency-sanath-nagar-hyderabad /projects/residential/kalpataru-residency/27
+Redirect 301 /projects/kalpataru-avana-parel /projects/residential/kalpataru-avana/29
+Redirect 301 /projects/Srishti-Mira-Road /projects/residential/srishti/30
+Redirect 301 /projects/Sunrise-at-Kalpataru-Parkcity /projects/residential/sunrise-kalpataru-parkcity/28
+Redirect 301 /projects/kalpataru-radiance-goregaon-west-mumbai /projects/residential/kalpataru-radiance/7
+Redirect 301 /projects/kalpataru-one-crest /projects/residential/kalpataru-one-crest/32
+Redirect 301 /projects/parkcity /projects/residential/kalpataru-parkcity/33
+Redirect 301 "/projects/Parkcity Thane" /projects/residential/kalpataru-parkcity/33
+Redirect 301 /projects/kalpataru-grandeur-yeshwant-niwas-road-indore /projects/residential/kalpataru-grandeur/6
+Redirect 301 /projects/kalpataru-radiance-goregaon /projects/residential/kalpataru-radiance/7
+Redirect 301 "/projects/launch code starlight" /projects/residential/launch-code-starlight--kalpataru-parkcity/25
+
+#NewSet
+
+#Redirect 301 /?utm_source=gmb&utm_medium=gmb_organic&utm_campaign=gmb_avenue https://www.kalpataru.com/projects/commercial/kalpataru-avenue-/5
+#Redirect 301 /?utm_source=gmb&utm_medium=gmb_organic&utm_campaign=srishti
+Redirect 301 /about-us/awards https://www.kalpataru.com/awards
+Redirect 301 /about-us/Chairman-Message https://www.kalpataru.com/leadership-team
+Redirect 301 /about-us/corporate-profile https://www.kalpataru.com/leadership-team
+Redirect 301 /about-us/csr https://www.kalpataru.com/csr
+Redirect 301 /about-us/group-companies https://www.kalpataru.com/group-company
+Redirect 301 /about-us/kalpataru-chairman-message?lightbox%5Bwidth%5D=87p&lightbox%5Bheight%5D=auto https://www.kalpataru.com/leadership-team
+Redirect 301 /about-us/kalpataru-corporate-profile https://www.kalpataru.com/company-profile
+Redirect 301 /about-us/kalpataru-csr https://www.kalpataru.com/company-profile
+Redirect 301 /about-us/kalpataru-csr?lightbox%5Bwidth%5D=87p&lightbox%5Bheight%5D=auto https://www.kalpataru.com/csr
+Redirect 301 /about-us/kalpataru-group-companies?lightbox%5Bwidth%5D=87p&lightbox%5Bheight%5D=auto https://www.kalpataru.com/group-company
+Redirect 301 /about-us/kalpataru-leadership-team https://www.kalpataru.com/leadership-team
+Redirect 301 /about-us/kalpataru-legacy https://www.kalpataru.com/50-plus-years-of-our-legacy
+Redirect 301 /about-us/leadership-team https://www.kalpataru.com/leadership-team
+Redirect 301 /about-us/legacy https://www.kalpataru.com/50-plus-years-of-our-legacy
+Redirect 301 /assurance/approach?lightbox%5Bwidth%5D=87p&lightbox%5Bheight%5D=auto https://www.kalpataru.com/company-profile
+Redirect 301 /assurance/our-green-footprint https://www.kalpataru.com
+Redirect 301 /assurance/our-green-footprints https://www.kalpataru.com/company-profile
+Redirect 301 /assurance/our-green-journey?lightbox%5Bwidth%5D=87p&lightbox%5Bheight%5D=auto https://www.kalpataru.com/company-profile
+Redirect 301 /contact-us/careers https://careers.kalpataru.com/
+Redirect 301 /contact-us/careers-in-kalpataru https://careers.kalpataru.com/
+Redirect 301 /contact-us/kalpataru-main-office https://www.kalpataru.com/contact-us
+Redirect 301 /contact-us/kalpataru-main-office?lightbox%5Bwidth%5D=75p&lightbox%5Bheight%5D=500 https://www.kalpataru.com/contact-us
+Redirect 301 /contact-us/kalpataru-main-office?lightbox%5Bwidth%5D=87p&lightbox%5Bheight%5D=auto https://www.kalpataru.com/contact-us
+Redirect 301 /contact-us/main-office https://www.kalpataru.com/contact-us
+Redirect 301 /home https://www.kalpataru.com
+Redirect 301 /kalpataru-completed-projects https://www.kalpataru.com/projects
+Redirect 301 /kalpataru-ongoing-projects https://www.kalpataru.com/projects
+Redirect 301 /kalpataru-ongoing-projects?lightbox%5Bwidth%5D=87p&lightbox%5Bheight%5D=auto https://www.kalpataru.com/projects
+Redirect 301 /kalpataru-project-list https://www.kalpataru.com/projects
+Redirect 301 /kalpataru-project-list/1-bhk-properties-in-mumbai https://www.kalpataru.com/projects
+Redirect 301 /kalpataru-project-list/1-bhk-properties-in-mumbai?lightbox%5Bwidth%5D=87p&lightbox%5Bheight%5D=auto https://www.kalpataru.com/projects
+Redirect 301 /kalpataru-project-list/1-bhk-properties-in-pune?lightbox%5Bwidth%5D=87p&lightbox%5Bheight%5D=auto https://www.kalpataru.com/projects
+Redirect 301 /kalpataru-project-list/1-bhk-properties-in-thane?lightbox%5Bwidth%5D=87p&lightbox%5Bheight%5D=auto https://www.kalpataru.com/projects
+Redirect 301 /kalpataru-project-list/2-bhk-properties-in-mumbai?lightbox%5Bwidth%5D=87p&lightbox%5Bheight%5D=auto https://www.kalpataru.com/projects
+Redirect 301 /kalpataru-project-list/2-bhk-properties-in-pune?lightbox https://www.kalpataru.com
+Redirect 301 /kalpataru-project-list/2-bhk-properties-in-pune?lightbox%5Bwidth%5D=87p&lightbox%5Bheight%5D=auto https://www.kalpataru.com/projects
+Redirect 301 /kalpataru-project-list/2-bhk-properties-in-thane?lightbox https://www.kalpataru.com
+Redirect 301 /kalpataru-project-list/2-bhk-properties-in-thane?lightbox%5Bwidth%5D=87p&lightbox%5Bheight%5D=auto https://www.kalpataru.com/projects
+Redirect 301 /kalpataru-project-list/3-bhk-properties-in-mumbai?lightbox%5Bwidth%5D=87p&lightbox%5Bheight%5D=auto https://www.kalpataru.com/projects
+Redirect 301 /kalpataru-project-list/3-bhk-properties-in-pune?lightbox https://www.kalpataru.com
+Redirect 301 /kalpataru-project-list/3-bhk-properties-in-pune?lightbox%5Bwidth%5D=87p&lightbox%5Bheight%5D=auto https://www.kalpataru.com/projects
+Redirect 301 /kalpataru-project-list/3-bhk-properties-in-thane https://www.kalpataru.com/projects
+Redirect 301 /kalpataru-project-list/3-bhk-properties-in-thane?lightbox https://www.kalpataru.com
+Redirect 301 /kalpataru-project-list/3-bhk-properties-in-thane?lightbox%5Bwidth%5D=87p&lightbox%5Bheight%5D=auto https://www.kalpataru.com/projects
+Redirect 301 /kalpataru-project-list/projects/kalpataru-launch-code-expansia-thane https://www.kalpataru.com/projects
+Redirect 301 /kalpataru-project-list/projects/kalpataru-magnus-bandra-east-mumbai https://www.kalpataru.com/projects/residential/kalpataru-magnus/13
+Redirect 301 /kalpataru-project-list/projects/kalpataru-vista-sector-128-noida https://www.kalpataru.com/projects
+Redirect 301 /kalpataru-project-list/properties-for-sale-in-hyderabad?lightbox https://www.kalpataru.com
+Redirect 301 /kalpataru-project-list/properties-for-sale-in-hyderabad?lightbox%5Bwidth%5D=87p&lightbox%5Bheight%5D=auto https://www.kalpataru.com/projects
+Redirect 301 /kalpataru-project-list/properties-in-hyderabad https://www.kalpataru.com/projects
+Redirect 301 /kalpataru-project-list/properties-in-indore?lightbox%5Bwidth%5D=87p&lightbox%5Bheight%5D=auto https://www.kalpataru.com/projects
+Redirect 301 /kalpataru-project-list/properties-in-lonavala?lightbox https://www.kalpataru.com
+Redirect 301 /kalpataru-project-list/properties-in-lonavala?lightbox%5Bwidth%5D=87p&lightbox%5Bheight%5D=auto https://www.kalpataru.com/projects
+Redirect 301 /kalpataru-project-list/properties-in-mumbai?lightbox%5Bwidth%5D=87p&lightbox%5Bheight%5D=auto https://www.kalpataru.com/projects
+Redirect 301 /kalpataru-project-list/properties-in-pune https://www.kalpataru.com/projects
+Redirect 301 /kalpataru-project-list/properties-in-pune?lightbox https://www.kalpataru.com
+Redirect 301 /kalpataru-project-list/properties-in-pune?lightbox%5Bwidth%5D=87p&lightbox%5Bheight%5D=auto https://www.kalpataru.com/projects
+Redirect 301 "/kalpataru-project-list?city=mumbai&zone=thane&config=3-3.5 BHK" https://www.kalpataru.com
+Redirect 301 /kalpataru-project-list?lightbox%5Bwidth%5D=87p&lightbox%5Bheight%5D=auto https://www.kalpataru.com
+Redirect 301 /kalpataru-project-location-map?lightbox%5Bwidth%5D=87p&lightbox%5Bheight%5D=auto https://www.kalpataru.com/projects
+Redirect 301 /kalpataru-refund-policy https://www.kalpataru.com/refund-policy
+Redirect 301 "/knowledge-hub/buyer's-guide" https://www.kalpataru.com
+Redirect 301 "/knowledge-hub/buyer's-guide/documentation" https://www.kalpataru.com
+Redirect 301 "/knowledge-hub/buyer's-guide/home-loan" https://www.kalpataru.com
+Redirect 301 "/knowledge-hub/buyer's-guide/tax-benefit" https://www.kalpataru.com
+Redirect 301 /knowledge-hub/documents https://www.kalpataru.com
+Redirect 301 /knowledge-hub/kalpataru-buyers-guide https://www.kalpataru.com
+Redirect 301 /knowledge-hub/kalpataru-buyers-guide/documentation https://www.kalpataru.com
+Redirect 301 /knowledge-hub/kalpataru-buyers-guide/documents-required-for-home https://www.kalpataru.com
+Redirect 301 /knowledge-hub/kalpataru-buyers-guide/documents-required-for-home?lightbox%5Bwidth%5D=87p&lightbox%5Bheight%5D=auto https://www.kalpataru.com
+Redirect 301 /knowledge-hub/kalpataru-buyers-guide/home-loan https://www.kalpataru.com
+Redirect 301 /knowledge-hub/kalpataru-buyers-guide/home-loan-for-kalpataru https://www.kalpataru.com
+Redirect 301 /knowledge-hub/kalpataru-buyers-guide/property-tax-benefit?lightbox%5Bwidth%5D=87p&lightbox%5Bheight%5D=auto https://www.kalpataru.com
+Redirect 301 /knowledge-hub/kalpataru-buyers-guide/tax-benefit https://www.kalpataru.com
+Redirect 301 /knowledge-hub/kalpataru-buyers-guide?lightbox%5Bwidth%5D=87p&lightbox%5Bheight%5D=auto https://www.kalpataru.com
+Redirect 301 /knowledge-hub/nri https://www.kalpataru.com
+Redirect 301 /knowledge-hub/rera https://www.kalpataru.com
+Redirect 301 /knowledge-hub/rera?lightbox%5Bwidth%5D=87p&lightbox%5Bheight%5D=auto https://www.kalpataru.com
+Redirect 301 /projectdetail?title=kalpataru-bliss&utm_source=gmb&utm_medium=gmb_organic&utm_campaign=kalpataru_bliss https://www.kalpataru.com
+Redirect 301 /projectdetail?title=kalpataru-crest-bhandup-west-mumbai https://www.kalpataru.com
+Redirect 301 /projectdetail?title=kalpataru-launch-code-expansia-thane https://www.kalpataru.com
+Redirect 301 /projectdetail?title=kalpataru-matru-ashish https://www.kalpataru.com
+Redirect 301 /projectlist https://www.kalpataru.com/projects
+Redirect 301 /projectlistmapnew https://www.kalpataru.com/projects
+Redirect 301 /projects/amoda-reserve https://www.kalpataru.com/projects
+Redirect 301 /projects/Elitus/project-update https://www.kalpataru.com
+Redirect 301 /projects/indexdata/index.swf https://www.kalpataru.com
+#Redirect 301 /projects/ka
+#Redirect 301 /projects/ka...
+Redirect 301 "/projects/kalpataru amoda reserve lonavala" https://www.kalpataru.com/projects
+Redirect 301 "/projects/kalpataru avana parel mumbai" https://www.kalpataru.com/projects/residential/kalpataru-avana/29
+Redirect 301 "/projects/kalpataru avenue" https://www.kalpataru.com/projects/commercial/kalpataru-avenue-/5
+Redirect 301 "/projects/kalpataru bliss" https://www.kalpataru.com/projects
+Redirect 301 "/projects/Kalpataru Bliss Apartments" https://www.kalpataru.com/projects
+Redirect 301 "/projects/kalpataru crest bhandup west mumbai" https://www.kalpataru.com/projects/residential/kalpataru-crest/21
+Redirect 301 "/projects/kalpataru exquisite wakad pune" https://www.kalpataru.com/projects/residential/kalpataru-exquisite/18
+Redirect 301 "/projects/kalpataru grandeur yeshwant niwas road indore" https://www.kalpataru.com/projects/residential/kalpataru-grandeur/6
+Redirect 301 "/projects/kalpataru immensa thane west" https://www.kalpataru.com/projects/residential/immensa-kalpataru-parkcity/26
+Redirect 301 "/projects/kalpataru imperia" https://www.kalpataru.com/projects/residential/kalpataru-imperia/20
+Redirect 301 "/projects/kalpataru jade residences baner pune" https://www.kalpataru.com/projects/residential/kalpataru-jade-residences/31
+Redirect 301 "/projects/kalpataru launch code expansia thane" https://www.kalpataru.com/projects
+Redirect 301 "/projects/kalpataru magnus bandra east mumbai" https://www.kalpataru.com/projects/residential/kalpataru-magnus/13
+Redirect 301 "/projects/kalpataru one crest" https://www.kalpataru.com/projects/residential/kalpataru-one-crest/32
+Redirect 301 "/projects/kalpataru paramount thane west" https://www.kalpataru.com/projects
+Redirect 301 "/projects/kalpataru primus residences santacruz east mumbai" https://www.kalpataru.com/projects
+Redirect 301 "/projects/kalpataru pristine hills thane west" https://www.kalpataru.com/projects
+Redirect 301 "/projects/kalpataru radiance goregaon west mumbai" https://www.kalpataru.com/projects/residential/kalpataru-radiance/7
+Redirect 301 "/projects/kalpataru residency sanath nagar hyderabad" https://www.kalpataru.com/projects/residential/kalpataru-residency/27
+Redirect 301 "/projects/kalpataru serenity manjri pune" https://www.kalpataru.com/projects/residential/kalpataru-serenity/16
+Redirect 301 "/projects/kalpataru siddhachal elegant thane west" https://www.kalpataru.com/projects
+Redirect 301 "/projects/kalpataru siddhachal elite thane west" https://www.kalpataru.com/projects
+Redirect 301 "/projects/kalpataru solitaire juhu mumbai" https://www.kalpataru.com/projects/residential/kalpataru-solitaire/8
+Redirect 301 "/projects/kalpataru sunrise thane west" https://www.kalpataru.com/projects/residential/sunrise-kalpataru-parkcity/28
+Redirect 301 "/projects/kalpataru vista sector 128 noida" https://www.kalpataru.com/projects
+Redirect 301 "/projects/kalpataru waterfront riverside panvel mumbai" https://www.kalpataru.com/projects
+Redirect 301 "/projects/kalpataru woodsville chandivali mumbai" https://www.kalpataru.com/projects/residential/kalpataru-woodsville/22
+Redirect 301 /projects/kalpataru_estate_pune.html https://www.kalpataru.com/projects
+Redirect 301 /projects/kalpataru_kamdhenu.html https://www.kalpataru.com/projects
+Redirect 301 /projects/kalpataru_siddhachal6.html https://www.kalpataru.com/projects
+Redirect 301 /projects/kalpataru-amoda-reserve-lonavala/location https://www.kalpataru.com/projects
+Redirect 301 /projects/kalpataru-amoda-reserve-lonavala/overview https://www.kalpataru.com/projects
+Redirect 301 /projects/kalpataru-avana-parel?lightbox%5Bwidth%5D=87p&lightbox%5Bheight%5D=auto https://www.kalpataru.com/projects/residential/kalpataru-avana/29
+Redirect 301 /projects/kalpataru-avana-parel-mumbai/amenities https://www.kalpataru.com/projects/residential/kalpataru-avana/29
+Redirect 301 /projects/kalpataru-avana-parel-mumbai/view360 https://www.kalpataru.com/projects/residential/kalpataru-avana/29
+Redirect 301 /projects/kalpataru-avana-parel-mumbai?lightbox https://www.kalpataru.com/projects/residential/kalpataru-avana/29
+Redirect 301 /projects/kalpataru-avenue?utm_source=gmb&utm_medium=gmb_organic&utm_campaign=gmb_avenue https://www.kalpataru.com/projects/commercial/kalpataru-avenue-/5
+Redirect 301 /projects/kalpataru-avenue?utm_source=gmb&utm_medium=gmb_organic&utm_campaign=kalpataru_avenue https://www.kalpataru.com/projects/commercial/kalpataru-avenue-/5
+Redirect 301 /projects/kalpataru-bliss/plans https://www.kalpataru.com/projects
+Redirect 301 /projects/kalpataru-bliss?utm_source=gmb&utm_medium=gmb_organic&utm_campaign=kalpataru_bliss https://www.kalpataru.com/projects
+Redirect 301 /projects/Kalpataru-Bliss-Apartments https://www.kalpataru.com/projects
+Redirect 301 /projects/kalpataru-cres https://www.kalpataru.com/projects/residential/kalpataru-crest/21
+Redirect 301 /projects/kalpataru-crest?lightbox%5Bwidth%5D=87p&lightbox%5Bheight%5D=auto https://www.kalpataru.com/projects/residential/kalpataru-crest/21
+Redirect 301 /projects/kalpataru-crest-bhandup-w https://www.kalpataru.com/projects/residential/kalpataru-crest/21
+Redirect 301 /projects/kalpataru-crest-bhandup-west-mumbai/plans https://www.kalpataru.com/projects/residential/kalpataru-crest/21
+Redirect 301 /projects/kalpataru-exquisite-wakad-pune/view360 https://www.kalpataru.com/projects/residential/kalpataru-exquisite/18
+Redirect 301 /projects/kalpataru-grandeur-yeshwant-niwas-road-indore?lightbox https://www.kalpataru.com/projects/residential/kalpataru-grandeur/6
+Redirect 301 /projects/kalpataru-grandeur-yeshwant-niwas-road-indore?lightbox%5Bwidth%5D=87p&lightbox%5Bheight%5D=auto https://www.kalpataru.com/projects/residential/kalpataru-grandeur/6
+Redirect 301 /projects/kalpataru-immensa-thane-west/plans?lightbox%5Bwidth%5D=87p&lightbox%5Bheight%5D=auto https://www.kalpataru.com/projects/residential/immensa-kalpataru-parkcity/26
+Redirect 301 /projects/kalpataru-immensa-thane-west?lightbox%5Bwidth%5D=87p&lightbox%5Bheight%5D=auto https://www.kalpataru.com/projects/residential/immensa-kalpataru-parkcity/26
+Redirect 301 /projects/kalpataru-imperia/amenities https://www.kalpataru.com/projects/residential/kalpataru-imperia/20
+Redirect 301 /projects/kalpataru-imperia?utm_source=gmb&utm_medium=gmb_organic&utm_campaign=kalpatary_imperia https://www.kalpataru.com/projects/residential/kalpataru-imperia/20
+Redirect 301 /projects/kalpataru-jade-residences-baner-pune?lightbox https://www.kalpataru.com/projects/residential/kalpataru-jade-residences/31
+Redirect 301 /projects/kalpataru-jade-residences-baner-pune?lightbox%5Bwidth%5D=87p&lightbox%5Bheight%5D=auto https://www.kalpataru.com/projects/residential/kalpataru-jade-residences/31
+Redirect 301 /projects/kalpataru-launch-code-exp https://www.kalpataru.com/projects
+Redirect 301 /projects/kalpataru-launch-code-expansia-thane https://www.kalpataru.com/projects
+Redirect 301 /projects/kalpataru-launch-code-expansia-thane/KalpataruExpansiadata/KalpataruExpansiadata/KalpataruExpansia.swf https://www.kalpataru.com/projects
+Redirect 301 /projects/kalpataru-launch-code-expansia-thane/overview https://www.kalpataru.com/projects
+Redirect 301 /projects/kalpataru-launch-code-expansia-thane?lightbox https://www.kalpataru.com/projects
+Redirect 301 /projects/kalpataru-launch-code-expansia-thane?utm_source=gmb&utm_medium=gmb_organic&utm_campaign=kalpataru_launch_code_starlight https://www.kalpataru.com/projects
+Redirect 301 /projects/Kalpataru-Magnus?lightbox%5Bwidth%5D=87p&lightbox%5Bheight%5D=auto https://www.kalpataru.com/projects/residential/kalpataru-magnus/13
+Redirect 301 /projects/kalpataru-magnus-bandra-east-mumbai?lightbox https://www.kalpataru.com/projects/residential/kalpataru-magnus/13
+Redirect 301 /projects/kalpataru-magnus-bandra-east-mumbai?lightbox%5Bwidth%5D=87p&lightbox%5Bheight%5D=auto https://www.kalpataru.com/projects/residential/kalpataru-magnus/13
+Redirect 301 /projects/kalpataru-magnus-bandra-east-mumbai?utm_source=gmb&utm_medium=gmb_organic&utm_campaign=kalpataru_magnus https://www.kalpataru.com/projects/residential/kalpataru-magnus/13
+Redirect 301 /projects/kalpataru-magnus-bandra-east-mumbai?utm_source=YouTube&utm_medium=Video&utm_campaign=LocationVideo https://www.kalpataru.com/projects/residential/kalpataru-magnus/13
+Redirect 301 /projects/kalpataru-matru-ashish https://www.kalpataru.com/projects
+Redirect 301 /projects/kalpataru-matru-ashish/amenities https://www.kalpataru.com/projects
+Redirect 301 /projects/kalpataru-matru-ashish?lightbox%5Bwidth%5D=87p&lightbox%5Bheight%5D=auto https://www.kalpataru.com/projects
+Redirect 301 /projects/kalpataru-matru-ashish?utm_source=gmb&utm_medium=gmb_organic&utm_campaign=kalpataru_matru_ashish https://www.kalpataru.com/projects
+Redirect 301 /projects/kalpataru-one-crest/overview https://www.kalpataru.com/projects/residential/kalpataru-one-crest/32
+Redirect 301 /projects/kalpataru-one-crest/overview?lightbox%5Bwidth%5D=87p&lightbox%5Bheight%5D=auto https://www.kalpataru.com/projects/residential/kalpataru-one-crest/32
+Redirect 301 /projects/kalpataru-paramount-thane-west https://www.kalpataru.com/projects
+Redirect 301 /projects/kalpataru-paramount-thane-west/ https://www.kalpataru.com/projects
+Redirect 301 /projects/kalpataru-paramount-thane-west/?lightbox%5Bwidth%5D=87p&lightbox%5Bheight%5D=auto https://www.kalpataru.com/projects
+Redirect 301 /projects/kalpataru-paramount-thane-west?lightbox https://www.kalpataru.com/projects
+Redirect 301 /projects/kalpataru-paramount-thane-west?lightbox%5Bwidth%5D=87p&lightbox%5Bheight%5D=auto https://www.kalpataru.com/projects
+Redirect 301 /projects/kalpataru-primus-residences-santacruz-east-mumbai?lightbox%5Bwidth%5D=87p&lightbox%5Bheight%5D=auto https://www.kalpataru.com/projects
+Redirect 301 /projects/kalpataru-primus-residences-santacruz-east-mumbai?utm_source=gmb&utm_medium=gmb_organic&utm_campaign=kalpataru_primus_residences https://www.kalpataru.com/projects
+Redirect 301 /projects/kalpataru-pristine-hills-thane-west https://www.kalpataru.com/projects
+Redirect 301 /projects/kalpataru-pristine-hills-thane-west/plans https://www.kalpataru.com/projects
+Redirect 301 /projects/kalpataru-pristine-hills-thane-west?lightbox https://www.kalpataru.com/projects
+Redirect 301 /projects/kalpataru-pristine-hills-thane-west?lightbox%5Bwidth%5D=87p&lightbox%5Bheight%5D=auto https://www.kalpataru.com/projects
+Redirect 301 /projects/kalpataru-radiance-goregaon-west-mumbai?lightbox https://www.kalpataru.com/projects/residential/kalpataru-radiance/7
+Redirect 301 /projects/kalpataru-residency?lightbox%5Bwidth%5D=87p&lightbox%5Bheight%5D=auto https://www.kalpataru.com/projects/residential/kalpataru-residency/27
+Redirect 301 /projects/kalpataru-residency-sanath-nagar-hyderabad/overview https://www.kalpataru.com/projects/residential/kalpataru-residency/27
+Redirect 301 /projects/kalpataru-residency-sanath-nagar-hyderabad?lightbox https://www.kalpataru.com/projects/residential/kalpataru-residency/27
+Redirect 301 /projects/kalpataru-residency-sanath-nagar-hyderabad?lightbox%5Bwidth%5D=87p&lightbox%5Bheight%5D=auto https://www.kalpataru.com/projects/residential/kalpataru-residency/27
+Redirect 301 /projects/kalpataru-serenity-manjri-pune?lightbox%5Bwidth%5D=87p&lightbox%5Bheight%5D=auto https://www.kalpataru.com/projects/residential/kalpataru-serenity/16
+Redirect 301 /projects/kalpataru-siddhachal-elite-thane?lightbox%5Bwidth%5D=87p&lightbox%5Bheight%5D=auto https://www.kalpataru.com/projects
+Redirect 301 /projects/kalpataru-siddhachal-elite-thane-west?lightbox https://www.kalpataru.com/projects
+Redirect 301 /projects/kalpataru-siddhachal-elite-thane-west?lightbox%5Bwidth%5D=87p&lightbox%5Bheight%5D=auto https://www.kalpataru.com/projects
+Redirect 301 /projects/kalpataru-solitaire-juhu-mumbai?lightbox%5Bwidth%5D=87p&lightbox%5Bheight%5D=auto https://www.kalpataru.com/projects/residential/kalpataru-solitaire/8
+Redirect 301 /projects/kalpataru-sunrise-thane-west?lightbox https://www.kalpataru.com/projects/residential/sunrise-kalpataru-parkcity/28
+Redirect 301 /projects/kalpataru-sunrise-thane-west?utm_source=gmb&utm_medium=gmb_organic&utm_campaign=kalpataru_sunrise https://www.kalpataru.com/projects/residential/sunrise-kalpataru-parkcity/28
+Redirect 301 /projects/kalpataru-sunrise-thane-westSunrise https://www.kalpataru.com/projects/residential/sunrise-kalpataru-parkcity/28
+Redirect 301 /projects/kalpataru-vienta-kandivali-east/overview https://www.kalpataru.com/projects/residential/kalpataru-vienta/12
+Redirect 301 /projects/kalpataru-vista.php https://www.kalpataru.com/projects
+Redirect 301 /projects/Kalpataru-Vista-Noida https://www.kalpataru.com
+Redirect 301 /projects/kalpataru-vista-noida https://www.kalpataru.com/projects
+Redirect 301 /projects/kalpataru-vista-sector-128-noida?lightbox%5Bwidth%5D=87p&lightbox%5Bheight%5D=auto https://www.kalpataru.com/projects
+Redirect 301 /projects/kalpataru-waterfront-riverside-panvel https://www.kalpataru.com/projects
+Redirect 301 /projects/kalpataru-waterfront-riverside-panvel?lightbox%5Bwidth%5D=87p&lightbox%5Bheight%5D=auto https://www.kalpataru.com/projects
+Redirect 301 /projects/kalpataru-waterfront-riverside-panvel-mumbai https://www.kalpataru.com/projects
+Redirect 301 /projects/kalpataru-waterfront-riverside-panvel-mumbai?lightbox%5Bwidth%5D=87p&lightbox%5Bheight%5D=auto https://www.kalpataru.com/projects
+Redirect 301 /projects/kalpataru-woodsville-chandivali-mumbai/overview https://www.kalpataru.com/projects/residential/kalpataru-woodsville/22
+Redirect 301 /projects/kalpataru-woodsville-chandivali-mumbai?lightbox https://www.kalpataru.com/projects/residential/kalpataru-woodsville/22
+Redirect 301 /projects/kalpataru-yashodhan https://www.kalpataru.com/projects
+Redirect 301 /projects/kalpataru-yashodhan-andhe https://www.kalpataru.com/projects
+Redirect 301 /projects/kalpataru-yashodhan-andheri-west-mumbai?lightbox%5Bwidth%5D=87p&lightbox%5Bheight%5D=auto https://www.kalpataru.com/projects
+Redirect 301 /projects/project-paramount https://www.kalpataru.com/projects
+Redirect 301 /sitefinity/status?ReturnUrl=https://www.kalpataru.com/projectdetail?title%3DImmensa%2520at%2520Kalpataru%2520Parkcity https://www.kalpataru.com
+Redirect 301 /sitefinity/status?ReturnUrl=https://www.kalpataru.com/projectdetail?title%3Dkalpataru-bliss%26utm_source%3Dgmb%26utm_medium%3Dgmb_organic%26utm_campaign%3Dkalpataru_bliss https://www.kalpataru.com/projects
+Redirect 301 /sitefinity/status?ReturnUrl=https://www.kalpataru.com/projectdetail?title%3Dkalpataru-launch-code-expansia-thane https://www.kalpataru.com
+Redirect 301 /sitefinity/status?ReturnUrl=https://www.kalpataru.com/projectdetail?title%3Dkalpataru-magnus-bandra-east-mumbai https://www.kalpataru.com/projects
+Redirect 301 /sitefinity/status?ReturnUrl=https://www.kalpataru.com/projectdetail?title%3Dkalpataru-matru-ashish https://www.kalpataru.com/projects
+Redirect 301 /sitefinity/status?ReturnUrl=https://www.kalpataru.com/projectdetail?title%3Dkalpataru-serenity-manjri-pune https://www.kalpataru.com/projects
+Redirect 301 /sitemap?lightbox%5Bwidth%5D=87p&lightbox%5Bheight%5D=auto https://www.kalpataru.com/projects
+
+
+Redirect 301 /projects/residential/kalpataru-vienta/12 /mumbai/kalpataru-vienta
+Redirect 301 /projects/residential/kalpataru-magnus/13 /mumbai/kalpataru-magnus
+Redirect 301 /projects/residential/kalpataru-serenity/16 /pune/kalpataru-serenity
+Redirect 301 /projects/residential/kalpataru-elitus/23 /mumbai/kalpataru-elitus
+Redirect 301 /projects/residential/kalpataru-parkcity/33 /thane/kalpataru-parkcity
+Redirect 301 /projects/commercial/kalpataru-avenue-/5 /mumbai/kalpataru-avenue
+Redirect 301 /projects/residential/kalpataru-grandeur/6 /indore/kalpataru-grandeur
+Redirect 301 /projects/residential/kalpataru-radiance/7 /mumbai/kalpataru-radiance
+Redirect 301 /projects/residential/kalpataru-solitaire/8 /mumbai/kalpataru-solitaire
+Redirect 301 /projects/residential/kalpataru-vista/9 /noida/kalpataru-vista
+Redirect 301 /projects/residential/kalpataru-bliss-apartments/10 /mumbai/kalpataru-bliss-apartments
+Redirect 301 /projects/residential/kalpataru-amoda/11 /lonavala/kalpataru-amoda
+Redirect 301 /projects/residential/kalpataru-vienta/12 /mumbai/kalpataru-vienta
+Redirect 301 /projects/residential/kalpataru-paramount/14 /thane/kalpataru-paramount
+Redirect 301 /projects/residential/matru-ashish-by-kalpataru/15 /mumbai/matru-ashish-by-kalpataru
+Redirect 301 /projects/residential/kalpataru-exquisite/18 /pune/kalpataru-exquisite
+Redirect 301 /projects/residential/kalpataru-imperia/20 /mumbai/kalpataru-imperia
+Redirect 301 /projects/residential/kalpataru-crest/21 /mumbai/kalpataru-crest
+Redirect 301 /projects/residential/kalpataru-woodsville/22 /mumbai/kalpataru-woodsville
+Redirect 301 /projects/residential/kalpataru-elitus/23 /mumbai/kalpataru-elitus
+Redirect 301 /projects/residential/launch-code-starlight--kalpataru-parkcity/25 /thane/launch-code-starlight-kalpataru-parkcity
+Redirect 301 /projects/residential/immensa-kalpataru-parkcity/26 /thane/immensa-kalpataru-parkcity
+Redirect 301 /projects/residential/kalpataru-residency/27 /hyderabad/kalpataru-residency
+Redirect 301 /projects/residential/sunrise-kalpataru-parkcity/28 /thane/sunrise-kalpataru-parkcity
+Redirect 301 /projects/residential/kalpataru-avana/29 /mumbai/kalpataru-avana
+Redirect 301 /projects/residential/srishti/30 /thane/srishti
+Redirect 301 /projects/residential/kalpataru-jade-residences/31 /pune/kalpataru-jade-residences
+Redirect 301 /projects/residential/kalpataru-one-crest/32 /chennai/kalpataru-one-crest
+Redirect 301 /projects/residential/kalpataru-elegante/34 /mumbai/kalpataru-elegante
+Redirect 301 /projects/residential/kalpataru-estate/35 /pune/kalpataru-estate
+Redirect 301 /projects/residential/riverside-living-coming-soon/36 /navi-mumbai/kalpataru-park-riviera
+
+Redirect 301 /resources https://www.kalpataru.com/
+
+#Redirect 301 /icons/ https://www.kalpataru.com/
+#Redirect 301 /icons https://www.kalpataru.com/
+
+Redirect 301 /jvlr /mumbai/Vivant
+Redirect 301 /vivant /mumbai/Vivant
+
+Redirect 301 /c/ https://www.kalpataru.com/
+Redirect 301 /46Karmen https://www.kalpataru.com/
+Redirect 301 /Index.aspx https://www.kalpataru.com/
+Redirect 301 /index.htm https://www.kalpataru.com/
+Redirect 301 /index1.html https://www.kalpataru.com/
+Redirect 301 /thane/srishti https://www.kalpataru.com/thane/srishti
